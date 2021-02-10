@@ -4,6 +4,30 @@ import "./css/theme-plugin.css";
 import  "./css/responsive.css";
 import "./css/style.css";
 import logo from "./images/logo.png";
+import image1 from "./images/project/1.jpg";  
+import image2 from "./images/project/2.jpg";
+import image3 from "./images/project/3.jpg";
+import image4 from "./images/project/4.jpg";
+import image5 from "./images/project/5.jpg";
+import image6 from "./images/project/6.jpg";
+import team1 from "./images/team/team1.jpg";
+import team2 from "./images/team/team2.jpg";
+import team3 from "./images/team/team3.jpg";
+import team4 from "./images/team/team4.jpg";
+// import blog1 from "./images/blog/blog1.jpg";
+// import blog2 from "./images/blog/blog2.jpg";
+// import blog3 from "./images/blog/blog3.jpg";
+import gallery1 from "./images/gallery-1.jpg";
+import gallery2 from "./images/gallery-2.jpg";
+import gallery3 from "./images/gallery-3.jpg";
+import gallery4 from "./images/gallery-4.jpg";
+import gallery5 from "./images/gallery-5.jpg";
+import gallery6 from "./images/gallery-6.jpg";
+import gallery7 from "./images/gallery-7.jpg";
+import gallery8 from "./images/gallery-8.jpg";
+import gallery9 from "./images/gallery-9.jpg";
+
+
 export default function Home(){
     return (
         <div id="bg">
@@ -26,7 +50,7 @@ export default function Home(){
                             {/* <!-- Single Widget --> */}
                             <div className="single-widget">
                                 <i className="fa fa-clock-o"></i>
-                                <h4>Opeening Time</h4>
+                                <h4>Opening Time</h4>
                                 <p>Mon-Sat: 9.00-18.00</p>
                             </div>
                             {/* <!--/ End Single Widget --> */}
@@ -53,7 +77,7 @@ export default function Home(){
             <div className="header-inner">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 col-sm-12 col-xs-12">
+                        {/* <div className="col-md-12 col-sm-12 col-xs-12"> */}
                             <div className="nav-area">
                                 {/* <!-- Main Menu --> */}
                                 <nav className="mainmenu">
@@ -94,7 +118,7 @@ export default function Home(){
                                 </ul>
                                 {/* <!--/ End Social --> */}
                             </div>
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
             </div>
@@ -107,7 +131,7 @@ export default function Home(){
             <div className="slider-one">
                 {/* <!-- Single Slider -->  */}
                 <div className="single-slider"
-                //  style={{backgroundImage:url('./images/slider/slider-bg1.jpg')}}
+                 style={{ backgroundImage:"url(./images/slider/slider-bg1.jpg)"}}
                  >
                     <div className="container">
                         <div className="row">
@@ -134,7 +158,7 @@ export default function Home(){
                 {/* <!--/ End Single Slider --> */}
                 {/* <!-- Single Slider -->  */}
                 <div className="single-slider"
-                //  style={{backgroundImage:url('./images/slider/slider-bg2.jpg')}}
+                 style={{backgroundImage:"url(./images/slider/slider-bg2.jpg)"}}
                  >
                     <div className="container">
                         <div className="row">
@@ -155,7 +179,7 @@ export default function Home(){
                 {/* <!--/ End Single Slider --> */}
                 {/* <!-- Single Slider -->  */}
                 <div className="single-slider" 
-                // style={{backgroundImage:url('./images/slider/slider-bg3.jpg')}}
+                style={{backgroundImage:"url(./images/slider/slider-bg3.jpg)"}}
                 >
                     <div className="container">
                         <div className="row">
@@ -301,22 +325,28 @@ export default function Home(){
                             {/* <!-- Single Choose --> */}
                             <div className="single-choose">
                                 <i className="fa fa-check"></i>
+                                <div>
                                 <h4>Deep Customization Process</h4>
                                 <p>notare quam littera gothica, quam nunc putamus parum claram</p>
+                                </div>
                             </div>
                             {/* <!-- End Single Choose -->	 */}
                             {/* <!-- Single Choose --> */}
                             <div className="single-choose">
                                 <i className="fa fa-support"></i>
+                                <div>
                                 <h4>Day/Night Live Support</h4>
                                 <p>notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas</p>
+                                </div>
                             </div>
                             {/* <!-- End Single Choose --> */}
                             {/* <!-- Single Choose --> */}
                             <div className="single-choose">
-                                <i className="fa fa-optin-monster"></i>
+                                <i className="fa fa-optin-monster" style={{fontSize:"24px"}}></i>
+                                <div>
                                 <h4>Powerfull Theme Options</h4>
                                 <p>notare quam littera gothica, quam nunc putamus parum claram</p>
+                                </div>
                             </div>
                             {/* <!-- End Single Choose -->	 */}
                         </div>
@@ -372,110 +402,122 @@ export default function Home(){
                 <div className="row">
                     <div className="col-md-12 col-sm-12 col-xs-12">
                         <div id="project-item" className="cbp">
-                            <div className="cbp-item  webdesign development video branding package">
+                            <div className="cbp-item"  
+                            // webdesign development video branding package"
+                            >
                                 {/* <!-- Single Project --> */}
                                 <div className="project-single">
                                     <div className="project-inner">
                                         <div className="project-head">
-                                            <img src="images/project/1.jpg" alt="app"/>
+                                            <img src={image1} alt="app"/>
                                         </div>
-                                        <div className="project-bottom">
+                                        {/* <div className="project-bottom">
                                             <h4><a href="project-single.html">Powerfull Theme</a><span className="category">Development</span></h4>
                                         </div>
                                         <div className="button">
                                             <a href="https://www.youtube.com/watch?v=E-2ocmhF6TA" className="btn video-play cbp-lightbox"><i className="fa fa-play"></i></a>
                                             <a href="project-single.html" className="btn"><i className="fa fa-link"></i></a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div> 
                                 {/* <!--/ End Single Project --> */}
                             </div>
-                            <div className="cbp-item  webdesign branding package">
+                            <div className="cbp-ite" 
+                            //  webdesign branding package"
+                             >
                                 {/* <!-- Single Project --> */}
                                 <div className="project-single">
                                     <div className="project-inner">
                                         <div className="project-head">
-                                            <img src="images/project/2.jpg" alt="app" />
+                                            <img src={image2} alt="app" />
                                         </div>
-                                        <div className="project-bottom">
+                                        {/* <div className="project-bottom">
                                             <h4><a href="project-single.html">Crazy Design</a><span className="category">Branding</span></h4>
                                         </div>
                                         <div className="button">
                                             <a data-fancybox="portfolio" href="images/project/2.jpg" className="btn"><i className="fa fa-photo"></i></a>
                                             <a href="project-single.html" className="btn"><i className="fa fa-link"></i></a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 {/* <!--/ End Single Project --> */}
                             </div>
-                            <div className="cbp-item  webdesign development video">
+                            <div className="cbp-item"
+                            //   webdesign development video"
+                              >
                                 {/* <!-- Single Project --> */}
                                 <div className="project-single">
                                     <div className="project-inner">
                                         <div className="project-head">
-                                            <img src="images/project/3.jpg" alt="app" />
+                                            <img src={image3} alt="app" />
                                         </div>
-                                        <div className="project-bottom">
+                                        {/* <div className="project-bottom">
                                             <h4><a href="project-single.html">Bootstrap Framework</a><span className="category">Development</span></h4>
                                         </div>
                                         <div className="button">
                                             <a href="https://www.youtube.com/watch?v=E-2ocmhF6TA" className="btn video-play cbp-lightbox"><i className="fa fa-play"></i></a>
                                             <a href="project-single.html" className="btn"><i className="fa fa-link"></i></a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 {/* <!--/ End Single Project --> */}
                             </div>
-                            <div className="cbp-item branding development">
+                            <div className="cbp-item"
+                            //  branding development"
+                             >
                                 {/* <!-- Single Project --> */}
                                 <div className="project-single">
                                     <div className="project-inner">
                                         <div className="project-head">
-                                            <img src="images/project/4.jpg" alt="app" />
+                                            <img src={image4} alt="app" />
                                         </div>
-                                        <div className="project-bottom">
+                                        {/* <div className="project-bottom">
                                             <h4><a href="project-single.html">Fully Responsive</a><span className="category">Branding</span></h4>
                                         </div>
                                         <div className="button">
                                             <a data-fancybox="portfolio" href="images/project/4.jpg" className="btn"><i className="fa fa-photo"></i></a>
                                             <a href="project-single.html" className="btn"><i className="fa fa-link"></i></a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 {/* <!--/ End Single Project --> */}
                             </div>
-                            <div className="cbp-item  webdesign development video">
+                            <div className="cbp-item"
+                            //   webdesign development video"
+                              >
                                 {/* <!-- Single Project --> */}
                                 <div className="project-single">
                                     <div className="project-inner">
                                         <div className="project-head">
-                                            <img src="images/project/5.jpg" alt="app"/>
+                                            <img src={image5} alt="app"/>
                                         </div>
-                                        <div className="project-bottom">
+                                        {/* <div className="project-bottom">
                                             <h4><a href="project-single.html">Easy To Use</a><span className="category">Development</span></h4>
                                         </div>
                                         <div className="button">
                                             <a href="https://www.youtube.com/watch?v=E-2ocmhF6TA" className="btn video-play cbp-lightbox"><i className="fa fa-play"></i></a>
                                             <a href="project-single.html" className="btn"><i className="fa fa-link"></i></a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 {/* <!--/ End Single Project --> */}
                             </div>
-                            <div className="cbp-item  webdesign development branding">
+                            <div className="cbp-item"  
+                            // webdesign development branding"
+                            >
                                 {/* <!-- Single Project --> */}
                                 <div className="project-single">
                                     <div className="project-inner">
                                         <div className="project-head">
-                                            <img src="images/project/6.jpg" alt="app"/>
+                                            <img src={image6} alt="app"/>
                                         </div>
-                                        <div className="project-bottom">
+                                        {/* <div className="project-bottom">
                                             <h4><a href="project-single.html">Modern Design</a><span className="category">Printing</span></h4>
                                         </div>
                                         <div className="button">
                                             <a data-fancybox="portfolio" href="images/project/6.jpg" className="btn"><i className="fa fa-photo"></i></a>
                                             <a href="project-single.html" className="btn"><i className="fa fa-link"></i></a>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 {/* <!--/ End Single Project --> */}
@@ -499,12 +541,12 @@ export default function Home(){
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-3 col-sm-6 col-xs-12">
+                    {/* <div className="col-md-3 col-sm-6 col-xs-12"> */}
                         {/* <!-- Single Team --> */}
                         <div className="single-team one default">
                             {/* <!-- Team Head --> */}
                             <div className="t-head">
-                                <img src="images/team/team1.jpg" alt="app"/>
+                                <img src={team1} alt="app" width="100%" height="100%"/>
                                 <div className="t-hover">
                                     <ul className="t-social">
                                         <li><a href="app"><i className="fa fa-facebook"></i></a></li>
@@ -524,13 +566,13 @@ export default function Home(){
                             </div>
                         </div>
                         {/* <!-- End Single Team --> */}
-                    </div>		
-                    <div className="col-md-3 col-sm-6 col-xs-12">
+                    {/* </div>		 */}
+                    {/* <div className="col-md-3 col-sm-6 col-xs-12"> */}
                         {/* <!-- Single Team --> */}
                         <div className="single-team two default">
                             {/* <!-- Team Head --> */}
                             <div className="t-head">
-                                <img src="images/team/team2.jpg" alt="app"/>
+                                <img src={team2} alt="app" width="100%" height="100%"/>
                                 <div className="t-hover">
                                     <ul className="t-social">
                                         <li><a href="app"><i className="fa fa-facebook"></i></a></li>
@@ -550,13 +592,13 @@ export default function Home(){
                             </div>
                         </div>
                         {/* <!-- End Single Team --> */}
-                    </div>	
-                    <div className="col-md-3 col-sm-6 col-xs-12">
+                    {/* </div>	 */}
+                    {/* <div className="col-md-3 col-sm-6 col-xs-12"> */}
                         {/* <!-- Single Team --> */}
                         <div className="single-team three default">
                             {/* <!-- Team Head --> */}
                             <div className="t-head">
-                                <img src="images/team/team3.jpg" alt="app"/>
+                                <img src={team3} alt="app" width="100%" height="100%"/>
                                 <div className="t-hover">
                                     <ul className="t-social">
                                         <li><a href="app"><i className="fa fa-facebook"></i></a></li>
@@ -576,13 +618,13 @@ export default function Home(){
                             </div>
                         </div>
                         {/* <!-- End Single Team --> */}
-                    </div>		
-                    <div className="col-md-3 col-sm-6 col-xs-12">
+                    {/* </div>		 */}
+                    {/* <div className="col-md-3 col-sm-6 col-xs-12"> */}
                         {/* <!-- Single Team --> */}
                         <div className="single-team four default">
                             {/* <!-- Team Head --> */}
                             <div className="t-head">
-                                <img src="images/team/team4.jpg" alt="app"/>
+                                <img src={team4} alt="app" width="100%" height="100%"/>
                                 <div className="t-hover">
                                     <ul className="t-social">
                                         <li><a href="app"><i className="fa fa-facebook"></i></a></li>
@@ -602,14 +644,14 @@ export default function Home(){
                             </div>
                         </div>
                         {/* <!-- End Single Team --> */}
-                    </div>	
+                    {/* </div>	 */}
                 </div>
                 </div>
         </section>
         {/* <!--/ End Team --> */}
 
         {/* <!-- Start Blogs --> */}
-        <section id="blog-main" className="blog-main section">
+        {/* <section id="blog-main" className="blog-main section">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-sm-12 col-xs-12">
@@ -621,13 +663,13 @@ export default function Home(){
                 </div>
                 <div className="row">
                     <div className="blog-main">
-                        <div className="col-md-12 col-sm-12 col-xs-12">
-                            <div className="blog-slider">
+                        {/* <div className="col-md-12 col-sm-12 col-xs-12"> */}
+                            {/* <div className="blog-slider"> */}
                                 {/* <!-- Single Slider --> */}
-                                <div className="single-blog single-slider">
+                                {/* <div className="single-blog single-slider">
                                     <div className="blog-post">
                                         <div className="blog-head">
-                                            <img src="images/blog/blog1.jpg" alt="app"/>
+                                            <img src={blog1} alt="app"/>
                                             <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
                                         </div>
                                         <div className="blog-info">
@@ -640,13 +682,13 @@ export default function Home(){
                                             <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
                                         </div>
                                     </div>				
-                                </div>
+                                </div> */}
                                 {/* <!--/ End Single Slider -->	 */}
                                 {/* <!-- Single Slider --> */}
-                                <div className="single-blog single-slider">
+                                {/* <div className="single-blog single-slider">
                                     <div className="blog-post">
                                         <div className="blog-head">
-                                            <img src="images/blog/blog2.jpg" alt="app"/>
+                                            <img src={blog2} alt="app"/>
                                             <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
                                         </div>
                                         <div className="blog-info">
@@ -659,13 +701,13 @@ export default function Home(){
                                             <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
                                         </div>
                                     </div>				
-                                </div>
+                                </div> */}
                                 {/* <!--/ End Single Slider -->	 */}
                                 {/* <!-- Single Slider --> */}
-                                <div className="single-blog single-slider">
+                                {/* <div className="single-blog single-slider">
                                     <div className="blog-post">
                                         <div className="blog-head">
-                                            <img src="images/blog/blog3.jpg" alt="app"/>
+                                            <img src={blog3} alt="app"/>
                                             <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
                                         </div>
                                         <div className="blog-info">
@@ -678,13 +720,13 @@ export default function Home(){
                                             <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
                                         </div>
                                     </div>				
-                                </div>
+                                </div> */}
                                 {/* <!--/ End Single Slider -->	 */}
                                 {/* <!-- Single Slider --> */}
-                                <div className="single-blog single-slider">
+                                {/* <div className="single-blog single-slider">
                                     <div className="blog-post">
                                         <div className="blog-head">
-                                            <img src="images/blog/blog1.jpg" alt="app"/>
+                                            <img src={blog1} alt="app"/>
                                             <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
                                         </div>
                                         <div className="blog-info">
@@ -697,13 +739,13 @@ export default function Home(){
                                             <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
                                         </div>
                                     </div>				
-                                </div>
+                                </div> */}
                                 {/* <!--/ End Single Slider -->	 */}
                                 {/* <!-- Single Slider --> */}
-                                <div className="single-blog single-slider">
+                                {/* <div className="single-blog single-slider">
                                     <div className="blog-post">
                                         <div className="blog-head">
-                                            <img src="images/blog/blog2.jpg" alt="app"/>
+                                            <img src={blog2} alt="app"/>
                                             <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
                                         </div>
                                         <div className="blog-info">
@@ -716,13 +758,13 @@ export default function Home(){
                                             <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
                                         </div>
                                     </div>				
-                                </div>
+                                </div> */}
                                 {/* <!--/ End Single Slider -->	 */}
                                 {/* <!-- Single Slider --> */}
-                                <div className="single-blog single-slider">
+                                {/* <div className="single-blog single-slider">
                                     <div className="blog-post">
                                         <div className="blog-head">
-                                            <img src="images/blog/blog3.jpg" alt="app"/>
+                                            <img src={blog3} alt="app"/>
                                             <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
                                         </div>
                                         <div className="blog-info">
@@ -735,14 +777,14 @@ export default function Home(){
                                             <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
                                         </div>
                                     </div>				
-                                </div>
+                                </div> */}
                                 {/* <!--/ End Single Slider --*/}
-                            </div>
+                            {/* </div>
                         </div>
-                    </div>						
-                </div>
-            </div>
-        </section>
+                    </div>						 */}
+                {/* </div> */}
+            {/* </div>
+        </section>  */}
         {/* <!--/ End Blog -->	 */}
         
         {/* <!-- Start Call-To-Action --> */}
@@ -826,15 +868,15 @@ export default function Home(){
                             <div className="single-widget photo-gallery">
                                 <h2>Photo Gallery</h2>
                                 <ul className="list">
-                                    <li><a href="images/gallery-1.jpg" data-fancybox="photo"><img src="images/gallery-1.jpg" alt="app" /></a></li>
-                                    <li><a href="images/gallery-2.jpg" data-fancybox="photo"><img src="images/gallery-2.jpg" alt="app"/></a></li>
-                                    <li><a href="images/gallery-3.jpg" data-fancybox="photo"><img src="images/gallery-3.jpg" alt="app" /></a></li>
-                                    <li><a href="images/gallery-4.jpg" data-fancybox="photo"><img src="images/gallery-4.jpg" alt="app"/></a></li>
-                                    <li><a href="images/gallery-5.jpg" data-fancybox="photo"><img src="images/gallery-5.jpg" alt="app" /></a></li>
-                                    <li><a href="images/gallery-6.jpg" data-fancybox="photo"><img src="images/gallery-6.jpg" alt="app" /></a></li>
-                                    <li><a href="images/gallery-7.jpg" data-fancybox="photo"><img src="images/gallery-7.jpg" alt="app"/></a></li>
-                                    <li><a href="images/gallery-8.jpg" data-fancybox="photo"><img src="images/gallery-8.jpg" alt="app" /></a></li>
-                                    <li><a href="images/gallery-9.jpg" data-fancybox="photo"><img src="images/gallery-9.jpg" alt="app"/></a></li>
+                                    <li><a href={gallery1} data-fancybox="photo"><img src="images/gallery-1.jpg" alt="app" /></a></li>
+                                    <li><a href={gallery2} data-fancybox="photo"><img src="images/gallery-2.jpg" alt="app"/></a></li>
+                                    <li><a href={gallery3} data-fancybox="photo"><img src="images/gallery-3.jpg" alt="app" /></a></li>
+                                    <li><a href={gallery4} data-fancybox="photo"><img src="images/gallery-4.jpg" alt="app"/></a></li>
+                                    <li><a href={gallery5} data-fancybox="photo"><img src="images/gallery-5.jpg" alt="app" /></a></li>
+                                    <li><a href={gallery6} data-fancybox="photo"><img src="images/gallery-6.jpg" alt="app" /></a></li>
+                                    <li><a href={gallery7} data-fancybox="photo"><img src="images/gallery-7.jpg" alt="app"/></a></li>
+                                    <li><a href={gallery8} data-fancybox="photo"><img src="images/gallery-8.jpg" alt="app" /></a></li>
+                                    <li><a href={gallery9} data-fancybox="photo"><img src="images/gallery-9.jpg" alt="app"/></a></li>
                                 </ul>
                             </div>
                             {/* <!--/ End Gallery Widget --> */}
@@ -850,7 +892,7 @@ export default function Home(){
                             <div className="copyright">
                                 <p>&copy; 2020 All Right Reserved.  Design & Developed By <a href="https://codeglim.com">https://www.codeglim.com</a>, Download Premium Themes from our official website <a href="https://codeglim.com">codeglim.com</a>.</p>
                             </div>
-                            {/* <!--/ End Copyright --> */}
+                            
                         </div>
                     </div>
                 </div>
