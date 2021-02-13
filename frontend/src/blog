@@ -1,0 +1,136 @@
+  {/* <!-- Start Blogs --> */}
+        {/* <section id="blog-main" className="blog-main section">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12 col-sm-12 col-xs-12">
+                        <div className="section-title">
+                            <h1>Latest Blog</h1>
+                            <p> Fusce semper purus suscipit ultricies tincidunt. Nulla eget turpis ac leo euismod pharetra at nec diam. Etiam id purus lacus. Suspendisse ligula nulla, cursus non</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="blog-main">
+                        {/* <div className="col-md-12 col-sm-12 col-xs-12"> */}
+                            {/* <div className="blog-slider"> */}
+                                {/* <!-- Single Slider --> */}
+                                {/* <div className="single-blog single-slider">
+                                    <div className="blog-post">
+                                        <div className="blog-head">
+                                            <img src={blog1} alt="app"/>
+                                            <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
+                                        </div>
+                                        <div className="blog-info">
+                                            <h2><a href="blog-single.html">10 Tips for Growing Your Business</a></h2>
+                                            <div className="meta">
+                                                <span><i className="fa fa-list"></i><a href="app">Marketing</a></span>
+                                                <span><i className="fa fa-calendar-o"></i>28 Sep, 2017</span>
+                                                <span><i className="fa fa-heart-o"></i><a href="app">35</a></span>
+                                            </div>
+                                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
+                                        </div>
+                                    </div>				
+                                </div> */}
+                                {/* <!--/ End Single Slider -->	 */}
+                                {/* <!-- Single Slider --> */}
+                                {/* <div className="single-blog single-slider">
+                                    <div className="blog-post">
+                                        <div className="blog-head">
+                                            <img src={blog2} alt="app"/>
+                                            <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
+                                        </div>
+                                        <div className="blog-info">
+                                            <h2><a href="blog-single.html">Amazing Multipage & Onepage</a></h2>
+                                            <div className="meta">
+                                                <span><i className="fa fa-list"></i><a href="app">Web</a></span>
+                                                <span><i className="fa fa-calendar-o"></i>15 Aug, 2017</span>
+                                                <span><i className="fa fa-heart-o"></i><a href="app">35</a></span>
+                                            </div>
+                                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
+                                        </div>
+                                    </div>				
+                                </div> */}
+                                {/* <!--/ End Single Slider -->	 */}
+                                {/* <!-- Single Slider --> */}
+                                {/* <div className="single-blog single-slider">
+                                    <div className="blog-post">
+                                        <div className="blog-head">
+                                            <img src={blog3} alt="app"/>
+                                            <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
+                                        </div>
+                                        <div className="blog-info">
+                                            <h2><a href="blog-single.html">How to start online business</a></h2>
+                                            <div className="meta">
+                                                <span><i className="fa fa-list"></i><a href="app">Finance</a></span>
+                                                <span><i className="fa fa-calendar-o"></i>02 July, 2017</span>
+                                                <span><i className="fa fa-heart-o"></i><a href="app">99</a></span>
+                                            </div>
+                                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
+                                        </div>
+                                    </div>				
+                                </div> */}
+                                {/* <!--/ End Single Slider -->	 */}
+                                {/* <!-- Single Slider --> */}
+                                {/* <div className="single-blog single-slider">
+                                    <div className="blog-post">
+                                        <div className="blog-head">
+                                            <img src={blog1} alt="app"/>
+                                            <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
+                                        </div>
+                                        <div className="blog-info">
+                                            <h2><a href="blog-single.html">Discover new banking tricks</a></h2>
+                                            <div className="meta">
+                                                <span><i className="fa fa-list"></i><a href="app">Marketing</a></span>
+                                                <span><i className="fa fa-calendar-o"></i>02 Apr, 2017</span>
+                                                <span><i className="fa fa-heart-o"></i><a href="app">35</a></span>
+                                            </div>
+                                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
+                                        </div>
+                                    </div>				
+                                </div> */}
+                                {/* <!--/ End Single Slider -->	 */}
+                                {/* <!-- Single Slider --> */}
+                                {/* <div className="single-blog single-slider">
+                                    <div className="blog-post">
+                                        <div className="blog-head">
+                                            <img src={blog2} alt="app"/>
+                                            <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
+                                        </div>
+                                        <div className="blog-info">
+                                            <h2><a href="blog-single.html">What makes us best in the world?</a></h2>
+                                            <div className="meta">
+                                                <span><i className="fa fa-list"></i><a href="app">Resource</a></span>
+                                                <span><i className="fa fa-calendar-o"></i>25 March, 2017</span>
+                                                <span><i className="fa fa-heart-o"></i><a href="app">35</a></span>
+                                            </div>
+                                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
+                                        </div>
+                                    </div>				
+                                </div> */}
+                                {/* <!--/ End Single Slider -->	 */}
+                                {/* <!-- Single Slider --> */}
+                                {/* <div className="single-blog single-slider">
+                                    <div className="blog-post">
+                                        <div className="blog-head">
+                                            <img src={blog3} alt="app"/>
+                                            <a className="link" href="blog-single.html"><i className="fa fa-paper-plane"></i></a>
+                                        </div>
+                                        <div className="blog-info">
+                                            <h2><a href="blog-single.html">Tips for success in 2017</a></h2>
+                                            <div className="meta">
+                                                <span><i className="fa fa-list"></i><a href="app">Web</a></span>
+                                                <span><i className="fa fa-calendar-o"></i>02 Feb, 2017</span>
+                                                <span><i className="fa fa-heart-o"></i><a href="app">99</a></span>
+                                            </div>
+                                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula</p>
+                                        </div>
+                                    </div>				
+                                </div> */}
+                                {/* <!--/ End Single Slider --*/}
+                            {/* </div>
+                        </div>
+                    </div>						 */}
+                {/* </div> */}
+            {/* </div>
+        </section>  */}
+        {/* <!--/ End Blog -->	 */}

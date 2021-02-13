@@ -49,6 +49,7 @@ Version:	1.1
 21. Contact CSS
 22. Mail Success CSS
 23. Footer Top CSS
+24. About us our skill
 ========================================*/ 
 /*=======================
  01. Global CSS
@@ -308,7 +309,7 @@ input:-webkit-autofill:focus {
 }
 /*Bread Crumbs */
 .breadcrumbs {
-	background: url('http://via.placeholder.com/1600x500');
+	background: url('./../images/bread.jpg');
 	background-position: 100%;
 	position: relative;
 	background-repeat: no-repeat;
@@ -485,21 +486,23 @@ input:-webkit-autofill:focus {
 /* Logo */
 .header .logo {
 	padding-top: 35px;
+	padding-right: 50px;
+	
 }
 /* Header Widget */
 .header .header-widget {
 	float: right;
-	padding: 30px 0;
+	padding: 30px 20px;
 }
 .header .single-widget {
 	float: left;
 	position: relative;
 	padding-left: 40px;
-	margin-right: 50px;
-	
+	margin:0 20px;
 }
 .header .single-widget:last-child{
 	margin:0;
+	/* padding-left: 0; */
 }
 .header .single-widget i {
 	position: absolute;
@@ -513,7 +516,7 @@ input:-webkit-autofill:focus {
 }
 .header .single-widget h4 {
 	margin-bottom: 2px;
-	font-size: 16px;
+	font-size: 20px;
 	text-transform: initial;
 	color: #353535;
 	font-weight: 500;
@@ -533,9 +536,13 @@ input:-webkit-autofill:focus {
 	float: left;
 	/* width: 100%; */
 }
+.header .nav {
+	margin-left:0px;
+}
 .header .nav li {
 	position: relative;
 	margin-right: 0px;
+
 }
 .header .nav li:last-child{
 	margin:0;
@@ -543,8 +550,8 @@ input:-webkit-autofill:focus {
 .header .nav li a {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 14px;
-	padding: 22px 15px;
+	font-size: 16px;
+	padding: 22px 12px;
 	position: relative;
 	font-weight: 500;
 	display: block;
@@ -638,7 +645,7 @@ input:-webkit-autofill:focus {
 	display:none;
 }
 .header .nav .drop-down li:hover a{
-	color:#fff;
+	color:#ed1c24;
 }
 .header .nav .drop-down a i {
 	margin-top: 5px;
@@ -820,6 +827,9 @@ input:-webkit-autofill:focus {
 .header-inner .nav-area .social{
 	display:flex;
 	align-items: center;
+}
+.header-inner .nav ul li a{
+	font-size:20px;
 }
 .header .social li {
 	display: inline-block;
@@ -1056,10 +1066,10 @@ input:-webkit-autofill:focus {
 =========================*/ 
 .hero-area{
 	position: relative;	
-	height: 680px;
+	height: 625px;
 	overflow:hidden;
 }
-.hero-area .slider-one:first-child{
+.hero-area .slider-one  .single-slider:first-child{
 	position:relative;
 	top:-50px;
 	background-image: url("./../images/slider/slider-bg1.jpg");
@@ -1069,6 +1079,7 @@ input:-webkit-autofill:focus {
 	background-size:100% ;  
 	width:100%;
 }
+
 .hero-area .single-slider {
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -1088,7 +1099,7 @@ input:-webkit-autofill:focus {
 	-ms-flex-pack: center;
 	justify-content: center;
 	width: 100%;
-	height: 580px;
+	height: 680px;
 	position: relative;
 	left:13%;
 }
@@ -1226,7 +1237,7 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	-moz-transform: perspective(600px) rotateY(90deg);
 	transform: perspective(600px) rotateY(90deg);
 	border-radius:0 3px 3px 0;
-	/* visibility:hidden; */
+	visibility:hidden;
 	opacity:0;
 }
 .hero-area:hover .owl-controls .owl-nav .owl-prev{
@@ -1245,7 +1256,7 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	-moz-transform: perspective(600px) rotateY(-90deg);
 	transform: perspective(600px) rotateY(-90deg);
 	border-radius:3px 0 0 3px;
-	/* visibility:hidden; */
+	visibility:hidden;
 	opacity:0;
 }
 .hero-area:hover .owl-controls .owl-nav .owl-next{
@@ -1282,27 +1293,27 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	width: 100%;
 	height: 100%;
 }
-/* .hero-area.creative .single-layer.one {
-	background-image:url('./../images/slider/layer1.png');
+.hero-area.creative .single-layer.one {
+	background-image:url('./../images/slider/slider-bg1.jpg');
 	background-position: top 0 left 0;
 }
 .hero-area.creative .single-layer.two {
-	background-image: url('./../images/slider/layer2.png');
+	background-image: url('./../images/slider/slider-bg2.jpg');
 	background-position: top -40% right 0%;
 }
 .hero-area.creative .single-layer.three {
-	background-image: url('./../images/slider/layer3.png');
+	background-image: url('./../images/slider/slider-bg3.jpg');
 	background-position: right 0 bottom 10%;
 }
 .hero-area.creative .single-layer.four {
-	background-image: url('./../images/slider/layer4.png');
+	background-image: url('./../images/slider/slider-bg3.jpg');
 	background-position: left -109px bottom 0%;
 }
 .hero-area.creative .single-layer.five {
 
-	background-image: url('./../images/slider/layer5.png');
+	background-image: url('./../images/slider/slider-bg3.jpg');
 	background-position: right 15px bottom 20%;
-} */
+}
 .hero-area.creative .owl-item.active .single-layer.one{
 	animation: fadeIn 0.8s both 1.2s;
 }
@@ -1431,8 +1442,8 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 =========================*/
 .features .container .row{
 	display: flex;
-	/* justify-content: center; */
-	/* align-items: center; */
+	justify-content: center; 
+	align-items: center;
 }
 .features .features-single {
 	padding: 40px 30px;
@@ -1476,15 +1487,19 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
 }
-.services .container .row:nth-child(2).col-xs-12{
-	width:300px;
+.services .container .row:nth-child(2) {
+	padding:0 2rem;
+}
+.services .container .row:nth-child(2) .col-xs-12{
+	width:22%;
+	margin:10px;
+	padding:0 1.5rem;
 }
 .services  .single-services {
 	background: #fff;
-	/* padding: 40px 20px 40px 72px; */
-	padding:20px;
+	padding: 40px 20px 40px 72px;
+	/* padding:20px; */
 	position: relative;
 	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.30);
 	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.30);
@@ -1494,7 +1509,8 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	overflow: hidden;
 	margin:10px 10px;
 	margin-top:30px;
-	width:330px;
+	width:80%;
+	display: flex;
 }
 .services .single-services:before{
 	position:absolute;
@@ -1544,14 +1560,15 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	opacity:1;
 }
 .services .single-services h2 {
-	font-size: 18px;
+	font-size:20px;
 	margin: 0 0 15px;
 }
 .services .single-services h2 a{
 	color:#353535;
 }
 .services .single-services p{
-	margin-top: 50px;
+	font-size:18px;
+	margin-top: 10px;
 }
 /* Services Sidebar */
 .services .single-sidebar {
@@ -1613,6 +1630,7 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 20px;
+	/* width:50 */
 }
 .services .single-sidebar.service .single-service:last-child {
 	margin:0px;
@@ -1861,7 +1879,7 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	margin-left:5px;
 }
 .why-choose .why-video {
-	background: url("http://via.placeholder.com/800x720");
+	background-image: url("./../images/why-choose.jpg");
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	transition: all 0.4s ease;
@@ -1914,7 +1932,7 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 .why-choose .why-video .video a {
 	position: absolute;
 	top: 50%;
-	right: 12%;
+	right: 11%;
 	width: 70px;
 	height: 70px;
 	text-align: center;
@@ -2105,6 +2123,9 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	-moz-transform:translateX(0%);
 	transform:translateX(0%);
 }
+.singleproject section:first-child .container{
+	
+}
 .projects .button .btn {
 	display: inline-block;
 	color: #fff;
@@ -2247,10 +2268,15 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 =========================*/ 
 .counter {
 	position: relative;
-	background: url('http://via.placeholder.com/1600x700');
+	background: url('./../images/statics.jpg');
 	padding: 70px 0 100px;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+.counter .container .row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .counter::before {
 	position: absolute;
@@ -2267,9 +2293,11 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	position: relative;
 	overflow: hidden;
 	margin-top: 30px;
+	display: flex;
 }
 .counter .counter-single .icon {
 	float: left;
+	margin:0 10px;
 }
 .counter .counter-single i {
 	font-size: 32px;
@@ -2282,17 +2310,18 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .counter .s-info {
 	padding-top: 15px;
+	margin:0 18px;
 }
 .counter .counter-single span {
 	display: block;
-	font-size: 30px;
+	font-size: 32px;
 	color: #fff;
-	margin: 0 0 15px;
+	margin: 0 0 20px;
 	font-weight: 700;
 }
 .counter .counter-single p {
 	color: #eee;
-	font-size: 18px;
+	font-size: 24px;
 }
 .counter.bg-none{
 	background:#353535;
@@ -2308,15 +2337,14 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	background: #fff;
 	position: relative;
 }
-.team  .row:nth-child(2)  .col-xs-12{
-	width:20%;
-}
-.team .container .row:nth-child(2){
+.team  .row:nth-child(2){
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .team .single-team {
 	background: #fff;
-	width:30%;
+	width:16%;
 	-webkit-transition:all 0.4s ease;
 	-moz-transition:all 0.4s ease;
 	transition:all 0.4s ease;
@@ -2326,7 +2354,7 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	margin-top:30px;
 }
 .team .default{
-	width:25%;
+	width:16%;
 }
 .team .t-head{
 	position:relative;
@@ -2336,7 +2364,6 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* width: 20%; */
 	height: 100%;
 	background: #fff;
 	opacity:0;
@@ -2351,9 +2378,6 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	visibility:visible;
 	opacity:0.3;
 }
-/* .col-xs-12 > .t-head{
-	width:15%;
-} */
 .team .default{
 	margin:20px;
 }
@@ -4099,8 +4123,21 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 .our-skill {
 	background: #fff;
 }
+.our-skill .container .row:nth-child(2){
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.our-skill .container .row:nth-child(2) .col-xs-12:first-child{
+	width:40%;
+}
+.our-skill .container .row:nth-child(2) .col-xs-12:nth-child(2){
+	width:50%;
+}
 .our-skill .skill-text {
 	margin-top: 30px;
+	padding:0 20px;
 }
 .our-skill .skill-text h2 {
 	font-size: 18px;
@@ -4154,6 +4191,12 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .our-skill .progress .progress-bar {
 	position: relative;
+	background-color: #ed1c24;
+	height:100%;
+}
+.our-skill .progress .progress-bar span::before{
+	color:#ed1c24;
+
 }
 /*=======================
   End Our Skill CSS
@@ -4589,7 +4632,7 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   23. Footer CSS
 =========================*/ 
 .footer .footer-top {
-	padding: 40px 0 70px;
+	padding: 50px;
 	background-color: #fff !important;
 	background-image: url("./../images/footer-bg.png");
 	background-repeat: repeat !important;
@@ -4598,18 +4641,40 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	background-origin: padding-box !important;
 	background-position: 0% 0% !important;
 	background-size: auto auto !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .footer .footer-top .single-widget{
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	margin-top:30px;
 }
 .footer .footer-top .container .row{
 display: flex;
+justify-content: center;
+/* align-items: center; */
+}
+.footer .footer-top .container .row .col-xs-12:nth-child(1){
+	margin:12px;
+	width:20%;
+}
+.footer .footer-top .container .row .col-xs-12:nth-child(2){
+	width:14%;
+	margin:12px;
+}
+.footer .footer-top .container .row .col-xs-12:nth-child(3){
+	width:20%;
+	margin:12px;
+}
+.footer .footer-top .container .row .col-xs-12:nth-child(4){
+	width:18%;
+	margin:12px;
 }
 .footer .footer-top h2 {
 	color: #353535;
-	font-size: 18px;
+	font-size: 20px;
 	text-transform: uppercase;
 	display: block;
 	margin-bottom: 20px;
@@ -4628,9 +4693,11 @@ display: flex;
 }
 .footer .footer-top .address p {
 	margin-bottom: 10px;
+	font-size:18px;
 }
 .footer .footer-top .address .list li {
 	padding-left: 25px;
+	font-size:18px;
 }
 .footer .footer-top .address .list li i {
 	position: absolute;
@@ -4659,6 +4726,7 @@ display: flex;
 	line-height: 24px;
 	text-align: center;
 	color: #fff;
+	font-size:20px;
 }
 .footer .footer-top .social a i{
 	color:#fff;
@@ -4666,8 +4734,12 @@ display: flex;
 .footer .footer-top .social li:hover a{
 	background:#353535;
 }
+.footer .footer-top .links li{
+	font-size:18px;
+}
 .footer .footer-top .links li i{
 	margin-right:5px;
+	font-size:20px;
 }
 .footer .footer-top .photo-gallery h2{
 	margin-bottom:10px;
@@ -4692,6 +4764,7 @@ display: flex;
 	position: relative;
 	padding-left: 30px;
 	margin-bottom: 10px;
+	font-size:18px;
 }
 .footer .footer-top .single-tweet:last-child{
 	margin:0;
@@ -4768,3 +4841,22 @@ display: flex;
 /*=======================
   End Footer CSS
 =========================*/ 
+
+
+/*=======================
+  About single services css
+=========================*/ 
+.single .container .row{
+	display:flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.single .container .row  .col-xs-12:first-child{
+	width:50%;
+	margin:20px;
+}
+.single .container .row  .col-xs-12:nth-child(2){
+	margin:20px;
+	width:25%;
+}
