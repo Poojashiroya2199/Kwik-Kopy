@@ -75,7 +75,7 @@ export default function Head(){
                                                     <li><a href="blog-single.html">Blog Single</a></li>
                                                 </ul>
                                             </li>					
-                                            <li><a href="contact.html">Contact</a></li>												
+                                            <li><Link to="/contactus">Contact</Link></li>												
                                         </ul>
                                     </div>
                                 </nav>

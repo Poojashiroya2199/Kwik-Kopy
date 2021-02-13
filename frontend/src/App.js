@@ -8,6 +8,7 @@ import Ourservices from "./components/Ourservices";
 import SeingService from "./components/SingleService";
 import Project from "./components/Project";
 import SingleProject from "./components/SingleProject";
+import Contactus from "./components/Contactus";
 export default function App(){
   return (
     <div id="bg">
@@ -19,6 +20,7 @@ export default function App(){
         <Route path="/ourservices" exact component={Ourservices}/>
         <Route path="/project" exact component={Project} />
         <Route path="/singleproject" exact component={SingleProject}/>
+        <Route path="/contactus" exact component={Contactus}/>
     <Footer/>
     </div>
     </div>

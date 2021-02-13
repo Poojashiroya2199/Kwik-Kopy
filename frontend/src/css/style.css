@@ -2123,8 +2123,18 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	-moz-transform:translateX(0%);
 	transform:translateX(0%);
 }
-.singleproject section:first-child .container{
-	
+.singleproject section .container .row:nth-child(2) {
+display: flex;
+padding:2rem;
+}
+.singleproject section .container .row:nth-child(2) .col-xs-12{
+	padding:0;
+	margin:0 20px;
+	width:20%;
+}
+.singleproject section .container .row:nth-child(2) .col-md-8{
+	text-align: justify;
+	width:60%;
 }
 .projects .button .btn {
 	display: inline-block;
@@ -4490,6 +4500,21 @@ filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 .contact-us .form {
 	margin-top:30px;
 }
+.contact-us .container .row:nth-child(2){
+	display:flex;
+	justify-content: center;
+	padding:0 4rem;
+}
+
+.contact-us .container .row:nth-child(2) .col-xs-12:nth-child(1){
+	width:50%;
+}
+.contact-us .container .row:nth-child(2) .col-xs-12:nth-child(2){
+	width:30%;
+	margin:0 20px;
+}
+
+
 .contact-us .form-group {
 	position: relative;
 	display: block;
